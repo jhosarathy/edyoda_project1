@@ -39,7 +39,9 @@ Preferred IDE: VS Code
 ## Development
 
 ```bash
-pip3 install -r requirements.txt
 python3 TestFunctions.py
+
+# To import data from TSV files
+python3 TestFunctions.py --books-file ./data/books.tsv --book-items-file ./data/book_items.tsv --users-file ./data/users.tsv
 ```
 
