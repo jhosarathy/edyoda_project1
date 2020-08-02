@@ -21,7 +21,7 @@ This service is a library management system which supports following actions
 
 ### Class diagram
 
-![Class Diagram](/04_class_diagram.png)
+![Class Diagram](/04_class_diagram_1.png)
 
 ### Flow chart
 
