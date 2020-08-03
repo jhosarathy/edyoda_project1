@@ -22,7 +22,7 @@ class System(Singleton):
 
     __init__():
         Constructs all the necessary attributes for the Book object
-    registerMember(name, location, age, aadharId, studentId):
+    registerMember(name, location, age, aadharId, Id):
         Verifies the aadhar_id and checks if it already is used to create a member.
         Registers a member.
     getMember(aadharId):

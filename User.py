@@ -62,7 +62,7 @@ class Member(User):
 
     Attributes
     ----------
-    student_id : str
+    id : str
         Identity card of the student
     fine : int
         Initially set to 0.
@@ -74,7 +74,7 @@ class Member(User):
 
     Methods
     -------
-    __init__(name, location, age, aadhar_id, student_id):
+    __init__(name, location, age, aadhar_id, id):
         Constructs all the necessary attributes for the Book object
     __repr__():
         Returns formatted string with information(name, location, id) of student.
@@ -91,13 +91,13 @@ class Member(User):
 
     '''
 
-    def __init__(self, name, location, age, aadhar_id, student_id):
+    def __init__(self, name, location, age, aadhar_id, id):
         '''
         Constructs all the necessary attributes for the Book object
         ...
         Parameters
         ----------
-        student_id : str
+        id : str
             Identity card of the student
         fine : int
             Initially set to 0.
@@ -107,12 +107,12 @@ class Member(User):
 
         '''
         super().__init__(name, location, age, aadhar_id)
-        self.student_id = student_id
+        self.id = id
         self.fine = 0
         self.issued = {}
 
     def __repr__(self):
-        return f"{self.name}, {self.location}, {self.student_id}"
+        return f"{self.name}, {self.location}, {self.id}"
 
     # assume name is unique
     def issueBook(self, book_name, days=10):

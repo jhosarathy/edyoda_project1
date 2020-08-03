@@ -78,6 +78,9 @@ class Catalog(Singleton):
         Book object
 
         '''
+        for existing_book in self.books:
+            if existing_book.name == name:
+                return None
         b = Book(name, author, publish_date, pages)
         if b not in self.books:
             self.different_book_count += 1
